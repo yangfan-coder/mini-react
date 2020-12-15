@@ -1,7 +1,6 @@
 import React from './react/index';
 export default class App extends React.Component {
   constructor(props) {
-    console.log(props);
     super(props);
     this.state = {
       test: 'init',
@@ -15,19 +14,20 @@ export default class App extends React.Component {
     });
   }
   componentDidMount() {
-    console.log('mount');
+    console.log('1111111');
+    // 执行setState的方法
     this.setState({
       test: 'mount',
     });
   }
   componentWillMount() {
-    console.log('willMount');
+    console.log('22222222');
   }
   componentWillUpdate() {
-    console.log('willupdate');
+    console.log('333333');
   }
   componentDidUpdate() {
-    console.log('didupdate');
+    console.log('4444444');
   }
   render() {
     return (
