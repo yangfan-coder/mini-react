@@ -8,8 +8,9 @@ react 的简约版
 
 ```sh
 npm install
-npm install -g parcel-bundler
-parcel index.html
 
+npm install -g parcel-bundler
+
+parcel index.html
 
 ```
