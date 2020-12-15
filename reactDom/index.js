@@ -36,7 +36,7 @@ export function _render(vnode) {
     });
   }
 
-  // vnode.children && vnode.children.forEach((child) => render(child, dom));
+  vnode.children && vnode.children.forEach((child) => render(child, dom));
 
   return dom;
 }
